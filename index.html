@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    <head>
+		<meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src *; style-src * 'unsafe-inline'; media-src *; frame-src *; img-src * data: content:; font-src *;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />   
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Crossings</title>
+        <meta name="description" content="Poetic responses to the art of Sean Scully at the Hatton Gallery and Laing Art Gallery, Newcastle upon Tyne. Part of Newcastle Poetry Festival 2018">
+		<meta name="author" content="Peter Hebden, Newcastle Centre for the Literary Arts, Newcastle University">
+		
+		
+    </head>
+
+
+
+    <body>
+	
+	    
+        <!-- HOME/FRONT PAGE -->
+
+        <div data-role="page" id="front">
+            <div class="ui-content" role="main">
+                <div id="front_header" style="text-align:center">
+                    <!--CROSSINGS<br/>Poetic responses to the art of Sean Scully-->
+                </div>
+                <div class="front_nav" data-role="controlgroup">
+                    <a id="front_hatton" class="front_navitem navitem hatton-link" href="#hatton-list" data-role="button" data-transition="fade"><div><!--Hatton Gallery--></div></a>
+                    <a id="front_laing" class="front_navitem navitem laing-link" href="#laing-list" data-role="button" data-transition="fade"><div><!--Laing Gallery--></div></a>
+                </div>
+            </div>
+
+            <div id="front_footer" data-role="footer" >
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="front_navitem navitem poets-link" data-role="button" href="#info" data-transition="fade"><div>The Poets</div></a></li>
+                        <li><a class="front_navitem navitem sean-scully-link" data-role="button" href="#info" data-transition="fade"><div>The Artist</div></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        <!-- LOCATION PAGES -->
+		
+		<!-- Hatton -->
+        <div data-role="page" id="hatton-list" class="list-page">
+            <div class="ui-content" role="main">
+					<div data-role="controlgroup">
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Hatton_1" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Hatton_2" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Hatton_3" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Hatton_4" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+					</div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="gallery-footer">
+                <div data-role="navbar">
+                            <ul>
+                                <li><a class="navitem front-link" data-role="button" href="#front" data-transition="fade" data-direction="reverse"><div>Home</div></a></li>
+                                <li><a class="navitem about-link" data-role="button" href="#info" data-transition="fade" data-direction="reverse"><div>Help</div></a></li>
+                            </ul>
+                </div>
+            </div>
+		</div>
+		
+		<!-- Laing -->
+		<div data-role="page" id="laing-list" class="list-page">
+            <div class="ui-content" role="main">
+					<div data-role="controlgroup">
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Laing_1" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Laing_2" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Laing_3" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+							<a class="navitem poem-link gallery-navitem" href="#poem-view" id="Laing_4" data-role="button" data-transition="fade"><div><!--Artwork name--></div></a>
+					</div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="gallery-footer">
+                <div data-role="navbar">
+                            <ul>
+                                <li><a class="navitem front-link" data-role="button" href="#front" data-transition="fade" data-direction="reverse"><div>Home</div></a></li>
+                                <li><a class="navitem about-link" data-role="button" href="#info" data-transition="fade" data-direction="reverse"><div>Help</div></a></li>
+                            </ul>
+                </div>
+            </div>
+		</div>
+
+        <!-- INFO PAGE -->
+
+        <div data-role="page" id="info">
+            <div data-role="header">
+                <div class="info_topnav topnav" data-role="navbar">
+                    <ul>
+                        <li><a class="info_navitem navitem sean-scully-link" id="sean-scully-tab">Sean Scully</a></li>
+						<li><a class="info_navitem navitem about-link" id="about-tab">About</a></li>
+						<li><a class="info_navitem navitem poets-link" id="poets-tab">The Poets</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui-content" role="main">
+                <div id="sean-scully" class="info_tab hidden">
+                    <p>The Newcastle Poetry Festival 2018 coincides with a major retrospective of the artist Sean Scully, co-hosted by the Hatton and Laing Art Galleries. Scully, who was born in Ireland, grew up in England and who has lived for many years in New York, is a graduate of Newcastle University. He is famous around the world as the master of post-minimalist abstraction and this retrospective is devoted to the work he undertook as an undergraduate here.</p>
+
+                    <p>The theme of this year’s Newcastle Poetry Festival is Crossings, and we’re focusing on all kinds of marriages and interweavings – between languages and cultures, but also between art forms. Scully’s work is itself characterised by multiple intersections as it explores the tensions between image and pattern, change and stasis, purity and impurity, surface and depth, and takes inspiration from the civic architecture of Newcastle, and in particular the bridges spanning the Tyne.</p>
+
+                    <p>Now in his seventies, Scully has twice been shortlisted for the Turner Prize and his work is in the collection of every major gallery in the world.</p>
+                   
+                </div>
+                <div id="about" class="info_tab hidden">
+                    <p>As part of the 2018 Newcastle Poetry Festival, eight poets have been commissioned to respond to eight paintings exhibited in <em>Sean Scully: 1970</em>, a major retrospective co-hosted by the Hatton and Laing Art Galleries between February and May 2018.</p>
+
+                    <p>The <strong>Crossings</strong> poetry app allows visitors to both galleries to read and listen to the poets' work while looking at the art in situ. From the Home screen, simply select the gallery you are currently visiting and then choose the poem you would like to read or hear by selecting the painting that inspired it. Use the 'Aa' button when reading a poem to adjust the text size. Information about the artist and the poets involved in the project can be found by selecting the tabs at the top of this screen.</p>
+
+                    <p>The two galleries are only a short walk from one another and we encourage you to take the opportunity to explore the city. Visitors to Newcastle can <span style="text-decoration: underline"><a href="https://www.google.co.uk/maps/dir/Hatton+Gallery,+Newcastle+upon+Tyne/Laing+Art+Gallery,+New+Bridge+St,+Newcastle+upon+Tyne+NE1+8AG/@54.9768869,-1.6123073,16z/data=!4m8!4m7!1m2!1m1!1s0x487e70cc3db80d81:0x313c270766244b93!1m2!1m1!1s0x487e70c0f2788f11:0x52e3646102815f64!3e2" target="_blank">tap here</a></span> to see the route between the Hatton Gallery and and Laing Art Gallery on Google Maps.</p>
+
+                    <p>Thanks are due to the following: Sean Scully for his blessing on this project and to Faye Fleming for her help with logistics; to the Newcastle Institute for Creative Arts Practice for funding this project as an interdisciplinary “crossing” between visual art and poetry; and to Tyne and Wear Archives and Museums for hosting our poets and enabling the conversation.</p>
+
+                    <div id="logo-container">
+                        <img src="img/COMPANY-LOGO.jpg" />
+                    </div>
+
+				</div>
+				<div id="poets" class="info_tab hidden">
+                    <!-- Auto-populate with bios -->
+                </div>
+            </div>
+            <div class="info-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar">
+                        <ul>
+                            <li><a class="navitem front-link" data-role="button" href="#front" data-transition="fade" data-direction="reverse"><div>Home</div></a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+		<!-- POEM DISPLAY PAGE -->
+
+        <div data-role="page" id="poem-view">
+            <div data-role="header" id="read-header"> 
+                <h1 id="painting-name"><!--Painting name--></h1>
+            </div>
+            <div class="ui-content" role="main">
+
+                <div id="poem-container">
+                    <div id="audio-frame">
+                        <!--audio element generated-->
+                    </div>
+                    
+                    <a data-role="button" id="view-switch">View Painting</a>
+                    
+                    <div id="text-frame">
+                        <div id="poet-name"><!--Poet name--></div>
+						<div id="poem-title"><!--Poem title--></div>
+						<div id="poem-text"><!--Poem text--></div>
+                    </div>
+                    
+                    <div id="painting-frame" class="hidden">
+                        <img src="" />
+                        <div id="credit"><!--Image credit--></div>
+                    </div>
+
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" class="read-footer" data-tap-toggle="false">
+                <div class="hidden" id="text-size-panel">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <a id="text-smaller" data-role="button">&ndash;</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <p>Text Size</p>
+                        </div>
+                        <div class="ui-block-c">
+                            <a id="text-larger" data-role="button">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="default-back back-button back-list navitem" data-transition="fade" data-direction="reverse"><div>Back</div></a></li>
+                        <li><a id="text-size-button" class="navitem"><div>Aa</div></a></li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+		
+
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <script type="text/javascript">
+            window.addEventListener('load', function () {
+              $(document).on('click', 'a[target="_system"],a[target="_blank"]', function (e) {
+                e.preventDefault();
+                var url = this.href;
+                window.open(url,"_system");
+              });
+            }, false);
+        </script>
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/velocity.min.js"></script>
+		<script type="text/javascript" src="js/hammer.js"></script>
+		<script type="text/javascript" src="js/jquery.hammer.js"></script>
+		<script type="text/javascript" src="js/fastclick.js"></script>
+
+		<script type="text/javascript" src="js/poems-data.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+        <script>
+            browser_info = navigator.appVersion;
+            if (
+                browser_info.includes("Android 4.0") ||
+                browser_info.includes("Android 4.1") ||
+                browser_info.includes("Android 4.2") ||
+                browser_info.includes("Android 4.3") ||
+                browser_info.includes("iPhone OS 3") ||
+                browser_info.includes("iPhone OS 4") ||
+                browser_info.includes("iPhone OS 5") ||
+                browser_info.includes("iPhone OS 6") ||
+                browser_info.includes("iPhone OS 7")
+                )
+                {
+                    //nothing here
+            } else {
+                    $('head').append('<link rel="stylesheet" type="text/css" href="css/front_default.css">');
+                }
+        </script>
+
+	
+
+
+</body>
+</html>

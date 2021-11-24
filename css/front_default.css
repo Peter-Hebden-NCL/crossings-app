@@ -1,0 +1,112 @@
+/*CREATING FRONT PAGE*/
+
+.ui-page#front, .ui-page#list_view {
+    height: 100%;
+    background-size:cover;
+}
+
+.ui-page#front .ui-content, .ui-page#list_view .ui-content{
+    height: 100%;
+    padding: 0;
+}
+
+#front_header {
+    background-color: white;
+    /*height: 12.5vh;*/
+    background-image: url(../img/crossings-orangeblue.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#front_header_image img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.front_nav {
+    margin: 0 !important;
+    overflow-y: hidden;
+    /*height: 75vh !important;*/
+}
+
+.front_nav .ui-controlgroup-controls {
+    height: 100%;
+}
+
+.front_navitem {
+    border-radius: 0px !important;
+    height: 25%;
+    padding: 0 !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    color: #333333 !important;
+    text-shadow: none !important;
+    /*height: 25vh;*/
+ }
+
+ .front_navitem div {
+     margin:auto;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 1.5em;
+     padding-top: 0.3em;
+ }
+
+ .front_nav a {
+     background-size: cover;
+     font-size: 1.2em;
+     /*max-height: 20vh;*/
+     /*height: 37.5vh;*/
+ }
+
+ .front_nav .map-link {
+    background-image: url("../img/bg1.jpg");
+ }
+
+ .front_nav .list-link {
+    background-image: url("../img/bg2.jpg");
+ }
+
+ .front_nav .how-to-link {
+    background-image: url("../img/bg3.jpg");
+ }
+
+ .front_nav .about-link {
+    background-image: url("../img/bg4.jpg");
+ }
+
+ #front_hatton {
+     background-image: url(../img/hatton-button.png);
+     background-size: 30%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: #01bac4;
+ }
+
+#front_laing {
+    background-image: url(../img/laing-button.png);
+    background-size: 30%;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-color: #c77973;
+}
+
+#front_footer{
+    /*height: 12.5vh;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:  black;
+}
+
+#front_footer .navitem {
+    /*height: 12.5vh*/
+}
+
+#front_footer .navitem div {
+    height: 1.5em;
+}

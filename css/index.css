@@ -1,0 +1,504 @@
+/*FONTS*/
+
+body, input, select, textarea, button, .ui-btn {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important; 
+}
+
+
+/*FUNCTIONAL*/
+
+#map, #loading, #error {
+    height: 100%;
+    text-align: center;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */ 
+
+}
+
+.hidden {
+    display: none !important;
+}
+
+.v_collapsible {
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: all .5s cubic-bezier(0, 1, 0.5, 1);
+    transition: all .5s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.h_collapsible {
+    overflow: hidden;
+    width: 0;
+    -webkit-transition: all .5s cubic-bezier(0, 1, 0.5, 1);
+    transition: all .5s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.ui-page{
+    min-height: 95%;
+}
+
+.fallback {
+    z-index: 99;
+}
+
+
+/*Poem display*/
+h1.ui-title {
+    width:100%;
+    margin: auto !important;
+}
+
+ .poem_display .ui-content {
+     padding: 0;
+ }
+
+.poem_display .ui-content p {
+    padding: 0 0.5em;
+}
+
+#poem>p {
+    text-indent: -1em;
+    padding: 0 0 0 1.5em;
+    margin-bottom: 0.1em;
+    margin-top: 0;
+}
+
+#poem .poem_title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#poem .poem_byline{
+    font-size: 1.2em;
+}
+
+#poem .poem_line{
+    font-size: 1em;
+}
+
+#poem .poem_bio, #poem .poem_note, #poem .poem_epigraph {
+    font-style: italic;
+    font-size: 0.8em;
+    text-indent: 0em;
+}
+
+#poem .poem_bio, #poem .poem_note {
+    padding: 0 0.5em;
+}
+
+#poem .poem_epigraph {
+    padding: 0 1.5em;
+}
+
+.image_banner {
+    width: 100%;
+}
+
+.image_banner img {
+    width: inherit;
+    height: auto;
+}
+
+.audio-frame {
+    width: 100%;
+    padding: 5%;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 1.5em;
+}
+
+.audio-frame audio{
+    width: 90%;
+}
+
+#text-size-panel {
+    text-align: center;
+    background-color: white;
+}
+
+#painting-frame {
+    /*height: 60vh;*/
+    overflow-y: scroll;
+    text-align: center;
+}
+
+#painting-frame img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+
+/*General styling*/
+
+#front_header_image img {
+    max-width: 100%;
+}
+
+#list-container p.location_name{
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+    font-weight: bold;
+}
+
+.ui-header {
+    color: #444444 !important;
+    text-shadow: none !important;
+    border-style: none !important;
+}
+
+.ui-navbar .ui-btn {
+    background-color: #444444 !important;
+    border-color: #444444 !important;
+    color: #f8f8f8 !important;
+    text-shadow: none !important;
+}
+
+ui-footer {
+    background-color: #f8f8f8 !important;
+}
+
+.ui-footer .ui-btn {
+    background-color: #444444 !important;
+    color: #f8f8f8 !important;
+    text-shadow: none !important;
+}
+
+.list-item .ui-btn.poem-link, .list-item .ui-btn.map-link {
+    border-color: #ddd !important;
+}
+
+#map_view .ui-footer .ui-btn,
+#map_view .ui-footer .ui-btn-active, 
+.ui-navbar .ui-btn-active {
+    background-color: #f6f6f6 !important;
+    border-color: #ddd !important;
+    color: black !important;
+    text-shadow: none !important;
+}
+
+ .list-item {
+     border-top: 1px lightgray solid;
+ }
+
+ .list-item .location_name {
+     color: #444444;
+ }
+
+.list-item .ui-grid-solo > .ui-block-a {
+    padding: 0 1em;
+}
+
+.front-link {
+    background-image: url(../img/home-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front-link div {
+    visibility: hidden;
+}
+
+.list-page .about-link {
+    background-image: url(../img/help-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.back-button {
+    background-image: url(../img/back-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#text-size-button {
+    background-image: url(../img/text-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*CREATING FRONT PAGE*/
+
+.ui-page#front, .ui-page#list_view {
+    height: 100%;
+}
+
+.ui-page#front .ui-content, .ui-page#list_view .ui-content{
+    height: 100%;
+    padding: 0;
+}
+
+
+#front_header_image {
+    max-height: 23%;
+    height: 18%;
+    width: 100%;
+    text-align: center;
+    padding: 1% 0;
+}
+
+#front_header_image img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.front_nav {
+    margin: 0 !important;
+    overflow-y: hidden;
+    height: 80% !important;
+}
+
+.front_nav .ui-controlgroup-controls {
+    height: 100%;
+}
+
+.front_navitem {
+    border-radius: 0px !important;
+    height: 25%;
+    padding: 0 !important;
+    /*border-bottom: 1px solid lightgray;*/
+    border-left-style: none !important;
+    border-right-style: none !important;
+    /* background-color: #444444 !important; */
+    color: #f8f8f8 !important;
+    text-shadow: none !important;
+ }
+
+ .front_navitem div {
+     margin:auto;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 1em;
+ }
+
+ .front_nav a {
+     background-size: cover;
+     font-size: 1.2em;
+     max-height: 100% !important;
+ }
+
+
+#front_footer li, .read-footer li, .gallery-footer li {
+    border-right: 1px white solid;
+}
+ 
+
+/*Stopping scrolling on UI*/
+html {
+    overflow: hidden;
+    font-size: 14pt;
+    background-color: black !important;
+}
+
+/*Scrolling for Poets bios page*/
+
+#bios_container {
+    /*height: 80vh;*/
+    overflow-y: scroll;
+}
+
+
+
+.bio_panel {
+    clear: both;
+    margin-bottom: 5px;
+}
+
+/*styling for items with auto-populated background images*/
+.poem-link, #read-header {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.bio_photo {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 33%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 5px;
+    margin-bottom:5px
+}
+
+.gallery-navitem {
+    height: 22.5%;
+    color: #444444 !important;
+    padding: 0;
+}
+
+#hatton-list .gallery-navitem:nth-child(2), #hatton-list .gallery-navitem:nth-child(4), #laing-list .gallery-navitem:nth-child(1), #laing-list .gallery-navitem:nth-child(3){
+    background-color: #c77973
+}
+
+#laing-list .gallery-navitem:nth-child(2), #laing-list .gallery-navitem:nth-child(4), #hatton-list .gallery-navitem:nth-child(1), #hatton-list .gallery-navitem:nth-child(3){
+    background-color: #01bac4
+}
+
+.gallery-navitem div {
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    font-size: 1.5em;
+    margin-top:  15%;
+    margin-bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px;
+}
+
+.gallery-footer, .read-footer, .info-footer {
+    background-color: black;
+    text-align: center;
+    /*height: 10vh;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Gallery display*/
+
+#hatton-list, #laing-list {
+    background-color: black;
+}
+
+.list-page .ui-content {
+    padding: 0;
+}
+
+.gallery-footer .navitem, .read-footer .navitem {
+    padding: 0;
+}
+
+.gallery-footer .navitem div, .read-footer .navitem div {
+    height: 1.5em;
+    /* padding-bottom: 10%; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    padding-top: 0.3em;
+    visibility: hidden;
+    /* background-color: #da1a0c; */
+    /* box-shadow: 0px 7px 10px #b37964; */
+    /* color: #444444; */
+}
+
+.list-page .ui-controlgroup, .list-page .ui-controlgroup-controls {
+    height: inherit !important;
+    margin: 0 !important;
+}
+
+/*Info pages*/
+
+#info p {
+    /* font-size: 1.5em; */
+}
+
+#info .ui-footer .ui-link {
+    font-size: 1em;
+}
+
+#logo-container {
+    width: 100%;
+    margin-top: 2em;
+    position:  relative;
+    text-align: center;
+}
+
+#logo-container img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Crossings poem display*/
+
+body {
+    background-color:black;
+}
+
+#poem-view, #info {
+    background-color: white;
+}
+
+#painting-name {
+    font-size: 1.5em;
+    background-color: rgba(255,255,255,0.6);
+}
+
+#credit {
+    font-size: 0.5em;
+}
+
+#text-frame {
+    /*height: 60vh;*/
+    overflow-y: scroll;
+    /* font-size: 1.5em; */
+}
+
+#poem-title {
+    padding-bottom: 1.5em;
+    font-weight: bold;
+}
+
+#poet-name {
+    padding-top: 2em;
+    text-transform: uppercase;
+}
+
+#poem-text p {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    padding-left: 3em;
+    text-indent: -3em;
+}
+
+#poem-text p.note {
+    text-indent: 0;
+    padding-left: 0;
+}
+
+audio {
+    width: 100%;
+}
+
+.read-footer *, .gallery-footer * {
+    height: inherit;
+}
+
+.read-footer .ui-link div{
+    height: 1.5em !important;
+    font-size: 1.5em;
+}
+
+.size-panel-open {
+    height: auto !important;
+}
+
+.info_tab {
+    overflow-y: scroll;
+}

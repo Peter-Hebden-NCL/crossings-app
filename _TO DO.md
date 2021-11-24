@@ -1,4 +1,0 @@
-- add app files
-- write README
-- write clear comments in code 
-- replace poems with placeholders (out of copyright stuff)
